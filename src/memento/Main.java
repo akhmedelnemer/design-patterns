@@ -6,11 +6,11 @@ public class Main {
         History history = new History();
 
         editor.setFontName("Arial");
-        history.push(editor.getState());
+        history.push(editor.createState());
         editor.setFontSize(12);
-        history.push(editor.getState());
+        history.push(editor.createState());
         editor.setContent("Hello World!");
-        history.push(editor.getState());
+        history.push(editor.createState());
 
         editor.setFontSize(90);
         editor.restore(history.pop());

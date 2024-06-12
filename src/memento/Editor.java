@@ -29,7 +29,7 @@ public class Editor {
         this.fontSize = fontSize;
     }
 
-    public EditorState getState() {
+    public EditorState createState() {
         return new EditorState(content, fontName, fontSize);
     }
 
